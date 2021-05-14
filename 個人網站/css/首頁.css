@@ -122,7 +122,8 @@ a{
     display: flex;
     margin-bottom: 30px;
 }
-.main li{
+.main a{
+    display: block;
     margin-right: 30px;
     width: 130px;
     height: 130px;
@@ -133,7 +134,7 @@ a{
     color: white;
     opacity: 1;
 }
-.main li:hover{
+.main a:hover{
     opacity: 0.6;
 }
 .circle1{
