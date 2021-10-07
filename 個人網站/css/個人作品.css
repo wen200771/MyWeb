@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -18,36 +86,58 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-body{
+
+body {
     background-color: #e9e5e4;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.wrap{
+
+.wrap {
     width: 1080;
     margin: 0 auto;
     display: flex;
@@ -55,53 +145,62 @@ a{
     align-items: center;
     /* border: 1px solid black; */
 }
-.header{
+
+.header {
     width: 800px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     padding: 40px 0px 40px 0px;
 }
-.logo{
+
+.logo {
     margin-right: 40px;
     color: #4d4d4d;
 }
-.logo .name{
+
+.logo .name {
     font-family: 'Noto Sans TC', sans-serif;
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 10px;
 }
-.logo span{
+
+.logo span {
     font-size: 25px;
     font-weight: 500;
 }
-.logo .Profession{
+
+.logo .Profession {
     font-family: 'Noto Serif TC', serif;
     font-size: 16px;
     letter-spacing: 4px;
 }
-.menu ul{
+
+.menu ul {
     display: flex;
     margin-bottom: 10px;
 }
-.menu li a{
+
+.menu li a {
     margin-right: 25px;
     font-family: 'Noto Serif TC', serif;
     font-weight: bold;
     color: #8d8c8b;
 }
-.menu li a:hover{
+
+.menu li a:hover {
     color: #60d0d4;
 }
-.content{
+
+.content {
     width: 800px;
     color: #4d4d4d;
     margin-top: 50px;
     /* border: 1px solid black; */
 }
 
-.content h1{
+.content h1 {
     font-family: 'Noto Serif TC', serif;
     font-weight: 700;
     font-size: 80px;
@@ -109,18 +208,21 @@ a{
     padding-bottom: 50px;
     /* border-bottom: 1px solid #4d4d4d; */
 }
-.project{
+
+.project {
     margin-top: 10px;
     margin-bottom: 40px;
     padding-top: 30px;
     border-top: 1px solid #4d4d4d;
     display: flex;
 }
-.project .main-right{
+
+.project .main-right {
     width: 40%;
     margin-left: 50px;
 }
-.project .main-right h3{
+
+.project .main-right h3 {
     font-family: 'Noto Serif TC', serif;
     width: 100px;
     height: 100px;
@@ -132,7 +234,8 @@ a{
     background: #60d0d4;
     margin-bottom: 20px;
 }
-.project .main-right h4{
+
+.project .main-right h4 {
     font-family: 'Noto Serif TC', serif;
     font-size: 16px;
     color: #4d4d4d;
@@ -140,29 +243,82 @@ a{
     border-top: 1px solid #4d4d4d;
     margin-bottom: 20px;
 }
-.project .main-right p{
+
+.project .main-right p {
     font-size: 12px;
     color: #4d4d4d;
     line-height: 15px;
     letter-spacing: 1px;
 }
-.swiper-container {
-    width: 437px;
-    height: 246px;
-    margin-bottom: 10px;
-    /* border: 1px solid black; */
+
+.swiper {
+    width: 240px;
+    height: 320px;
 }
-.content .more{
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
+}
+
+.content .more {
     font-family: 'Noto Serif TC', serif;
     letter-spacing: 1.3px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.content .more .Portfolio{
+
+.content .more .Portfolio {
     display: flex;
 }
-.content .more a{
+
+.content .more a {
     display: block;
     border-radius: 50%;
     background: #60d0d4;
@@ -174,7 +330,8 @@ a{
     line-height: 60px;
     margin-left: 20px;
 }
-.footer{
+
+.footer {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
@@ -185,25 +342,30 @@ a{
     padding-bottom: 50px;
     background: #e83555;
 }
-.icon{
+
+.icon {
     color: #60d0d4;
     margin-right: 20px;
 }
-.footer .content2{
+
+.footer .content2 {
     display: flex;
     color: white;
 }
-.footer h3{
+
+.footer h3 {
     margin-bottom: 5px;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1.5px;
 }
-.footer p{
+
+.footer p {
     font-size: 12px;
     line-height: 15px;
 }
-.footer a{
+
+.footer a {
     color: white;
     font-size: 12px;
     text-decoration: none;
